@@ -1,0 +1,47 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All words</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update word</h2>
+            <span class="text-light">Use the below form to Update an account</span>
+        </div>
+
+        <!-- add word form -->
+         <!-- form handling -->
+ <form method="POST" id="update_word">
+    <div class="new_word">
+        <div class="form-group">
+            <label for="name" class="text-light">Palavra</label>
+            <input type="hidden" name="id" value="<%= word._id %>">
+            <input type="text" name="en_word" value="<%= word.en_word %>" placeholder="Palavra">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Tradução</label>
+            <input type="text" name="pt_word" value="<%= word.pt_word%>" placeholder="Tradução">
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

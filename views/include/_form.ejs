@@ -1,0 +1,20 @@
+ <!-- form handling -->
+ <form action="/api/words" method="POST" id="add_word">
+    <div class="new_word">
+        <div class="form-group">
+            <label for="name" class="text-light">Palavra</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="en_word"   placeholder="Palavra">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Tradução</label>
+            <input type="text" name="pt_word"  placeholder="Tradução">
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
